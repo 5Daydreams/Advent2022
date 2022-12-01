@@ -130,7 +130,11 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Puzzle_Input\Day1_1.txt" />
+    <Text Include="Puzzle_Input\Day1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="InputDebug.h" />
+    <ClInclude Include="Day1_1.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

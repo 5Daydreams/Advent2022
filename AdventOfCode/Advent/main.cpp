@@ -1,7 +1,11 @@
-#include <iostream>
+#include "InputDebug.h"
+#include "Day1_1.h"
 
-
-int main (void)
+int main(void)
 {
-	std::cout << "Hello Advent" << std::endl;
+	std::vector<std::vector<int>> data = StoreDataAsNestedVector();
+
+	SumOfTopNBullshit(data, 3);
+
+	return 0;
 }
