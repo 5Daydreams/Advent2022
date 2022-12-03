@@ -76,27 +76,6 @@ inline int RoundScore(const std::string roundData, const bool debug = false)
 	 */
 }
 
-inline std::vector<std::string> StoreDataAsStringVector()
-{
-	std::ifstream in;
-	std::string temp;
-	const std::string path = DayIntoPath("2");
-
-	in.open(path);
-
-	std::vector<std::string> output;
-
-	while (!in.eof())
-	{
-		std::getline(in, temp);
-		output.push_back(temp);
-	}
-
-	in.close();
-
-	return output;
-}
-
 inline int DecidePlayerScore(const char opponentChoice, const char desiredRoundResult)
 {
 	switch (opponentChoice)

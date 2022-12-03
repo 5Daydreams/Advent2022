@@ -4,6 +4,8 @@
 #include <string>
 #include <fstream>
 
+#include <vector>
+
 inline std::string DayIntoPath(const std::string& id)
 {
 	const std::string start = "Puzzle_Input/Day";
@@ -12,7 +14,7 @@ inline std::string DayIntoPath(const std::string& id)
 	return start + id + end;
 }
 
-inline std::string PrintFullFile(const std::string id, const bool printOutput = false)
+inline std::string PrintFullFile(const std::string id)
 {
 	std::ifstream in;
 	std::string raw_data;
@@ -26,14 +28,17 @@ inline std::string PrintFullFile(const std::string id, const bool printOutput = 
 		raw_data += s + "\n";
 	}
 
-	if (printOutput)
-	{
-		std::cout << raw_data;
-	}
+	std::cout << raw_data;
 
 	in.close();
 
 	return raw_data;
+}
+
+inline std::string PrintFullFile(const int id)
+{
+	std::string idString = std::to_string(id);
+	return PrintFullFile(idString);
 }
 
 inline int IntFromString(const std::string& s)
@@ -47,4 +52,31 @@ inline int IntFromString(const std::string& s)
 	}
 
 	return output;
+}
+
+inline std::vector<std::string> StoreDataAsStringVector(std::string dayNumber)
+{
+	std::ifstream in;
+	std::string temp;
+	const std::string path = DayIntoPath(dayNumber);
+
+	in.open(path);
+
+	std::vector<std::string> output;
+
+	while (!in.eof())
+	{
+		std::getline(in, temp);
+		output.push_back(temp);
+	}
+
+	in.close();
+
+	return output;
+}
+
+inline std::vector<std::string> StoreDataAsStringVector(int dayNumber)
+{
+	std::string dayString = std::to_string(dayNumber);
+	return StoreDataAsStringVector(dayString);
 }
