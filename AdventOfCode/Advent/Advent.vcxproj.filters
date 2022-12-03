@@ -21,15 +21,23 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="Puzzle_Input\Day1.txt" />
+    <Text Include="Puzzle_Input\Day2.txt" />
+    <Text Include="Puzzle_Input\Day3.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="InputDebug.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Day1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Day2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputDebug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
