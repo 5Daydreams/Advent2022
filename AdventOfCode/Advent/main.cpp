@@ -1,16 +1,17 @@
 #include "InputDebug.h"
-#include "Day2.h"
-#include "Day3.h"
+#include "Day4.h"
+
+using namespace std;
 
 int main(void)
 {
-	std::cout << "Hello day 3" << std::endl;
+	std::cout << "Hello day 4" << std::endl;
 
-	std::vector<std::string> data = StoreDataAsStringVector(3);
+	std::vector<std::string> data = StoreDataAsStringVector(4);
 
-	int value = FindBadgeSumOfPriorities(data);
+	int thing = CountSelfContainedPairs(data);
 
-	std::cout << "Found the sum as: " << value << "\n";
+	std::cout << thing << '\n';
 
 	return 0;
 }
