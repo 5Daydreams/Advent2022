@@ -3,11 +3,9 @@
 
 int main(void)
 {
-    std::cout << "Hello day 5" << std::endl;
+	std::cout << "Hello day 5" << std::endl;
 
-    std::vector<std::vector<char>> crates = { std::vector<char>{} };
+	RunDay5();
 
-    ReadLineInstruction(crates, "move 100 from 17 to 55");
-
-    return 0;
+	return 0;
 }

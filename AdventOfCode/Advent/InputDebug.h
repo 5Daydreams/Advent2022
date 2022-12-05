@@ -14,6 +14,11 @@ inline std::string DayIntoPath(const std::string& id)
 	return start + id + end;
 }
 
+inline std::string DayIntoPath(const int id)
+{
+	return DayIntoPath(std::to_string(id));
+}
+
 inline std::string PrintFullFile(const std::string id)
 {
 	std::ifstream in;
