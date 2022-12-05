@@ -1,17 +1,13 @@
 #include "InputDebug.h"
-#include "Day4.h"
-
-using namespace std;
+#include "Day5.h"
 
 int main(void)
 {
-	std::cout << "Hello day 4" << std::endl;
+    std::cout << "Hello day 5" << std::endl;
 
-	std::vector<std::string> data = StoreDataAsStringVector(4);
+    std::vector<std::vector<char>> crates = { std::vector<char>{} };
 
-	int thing = CountSelfContainedPairs(data);
+    ReadLineInstruction(crates, "move 100 from 17 to 55");
 
-	std::cout << thing << '\n';
-
-	return 0;
+    return 0;
 }

@@ -24,6 +24,7 @@
     <Text Include="Puzzle_Input\Day2.txt" />
     <Text Include="Puzzle_Input\Day3.txt" />
     <Text Include="Puzzle_Input\Day4.txt" />
+    <Text Include="Puzzle_Input\Day5.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Day1.h">
@@ -38,10 +39,10 @@
     <ClInclude Include="InputDebug.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header.h">
+    <ClInclude Include="Day4.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Day4.h">
+    <ClInclude Include="Day5.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
