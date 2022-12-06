@@ -1,11 +1,11 @@
 #include "InputDebug.h"
-#include "Day5.h"
+#include "Day6.h"
 
 int main(void)
 {
-	std::cout << "Hello day 5" << std::endl;
+	std::cout << "Hello day 6" << std::endl;
 
-	RunDay5();
+	RunDay6();
 
 	return 0;
 }

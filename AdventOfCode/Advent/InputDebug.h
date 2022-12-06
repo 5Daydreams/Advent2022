@@ -85,3 +85,24 @@ inline std::vector<std::string> StoreDataAsStringVector(int dayNumber)
 	std::string dayString = std::to_string(dayNumber);
 	return StoreDataAsStringVector(dayString);
 }
+
+inline std::string StoreDataAsString(std::string dayNumber)
+{
+	std::ifstream in;
+	std::string result;
+	const std::string path = DayIntoPath(dayNumber);
+
+	in.open(path);
+
+	std::getline(in, result);
+
+	in.close();
+
+	return result;
+}
+
+inline std::string StoreDataAsString(int dayNumber)
+{
+	return StoreDataAsString(std::to_string(dayNumber));
+}
+
