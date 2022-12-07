@@ -26,27 +26,31 @@
     <Text Include="Puzzle_Input\Day4.txt" />
     <Text Include="Puzzle_Input\Day5.txt" />
     <Text Include="Puzzle_Input\Day6.txt" />
+    <Text Include="Puzzle_Input\Day7.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Day1.h">
+    <ClInclude Include="OldDays\Day1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Day2.h">
+    <ClInclude Include="OldDays\Day2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Day3.h">
+    <ClInclude Include="OldDays\Day3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="InputDebug.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Day4.h">
+    <ClInclude Include="OldDays\Day4.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Day5.h">
+    <ClInclude Include="OldDays\Day5.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Day6.h">
+    <ClInclude Include="OldDays\Day6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day7.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

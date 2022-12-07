@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 
-#include "InputDebug.h"
+#include "../InputDebug.h"
 
 struct Range
 {

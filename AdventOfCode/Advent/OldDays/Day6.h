@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 
-#include "InputDebug.h"
+#include "../InputDebug.h"
 
 
 inline bool TestForDifferentChars(std::string str)

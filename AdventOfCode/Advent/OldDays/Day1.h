@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 
-#include "InputDebug.h"
+#include "../InputDebug.h"
 
 inline std::vector<std::vector<int>> StoreDataAsNestedVector()
 {
