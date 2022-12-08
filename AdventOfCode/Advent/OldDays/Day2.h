@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 
-#include "InputDebug.h"
+#include "../InputDebug.h"
 
 inline int CalculateRoundVictory(const char opponentChoice, const char playerChoice)
 {

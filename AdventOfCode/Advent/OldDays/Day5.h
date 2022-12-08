@@ -6,8 +6,7 @@
 #include <tuple>
 #include <vector>
 
-#include "InputDebug.h"
-
+#include "../InputDebug.h"
 
 inline void MoveNCratesFromTo(std::vector<std::vector<char>>& crates, const int N, const int from, const int to)
 {
